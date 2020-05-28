@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "SDKQZNetworkOffline"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "趣智校园蓝牙交互SDK网络版"
   s.description  = <<-DESC
 			趣智校园蓝牙交互SDK网络版1.0.0版本
@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "8.0"
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
-  s.vendored_libraries = "SDKQZNetworkOffline/sdk_qz_ network_ offline_V1_0.a"
+  s.vendored_libraries = "SDKQZNetworkOffline/SDKQZNetworkOffline.a"
 end
