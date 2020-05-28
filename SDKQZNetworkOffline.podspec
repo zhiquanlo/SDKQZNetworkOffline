@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "8.0"
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
-  s.vendored_libraries = "SDKQZNetworkOffline/SDKQZNetworkOffline.a"
+  s.vendored_libraries = "Frameworks/SDKQZNetworkOffline.a"
 end
