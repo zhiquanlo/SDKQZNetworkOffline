@@ -13,5 +13,4 @@
 #import "KRWMUtils.h"
 #import "KRWMConstants.h"
 #import "KRWMObject.h"
-#import "KRWMRateObject.h"
 #endif /* KRWaterMeterKit_h */
