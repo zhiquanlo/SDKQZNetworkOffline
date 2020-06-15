@@ -39,7 +39,18 @@
 /// @param str 十六进制字符串
 + (NSData *)convertHexStrToData:(NSString *)str;
 
+/**
+ data转字符串
 
+ @param data 数据
+ @return 返回字符串
+ */
++ (NSString*)bytesStringWithData:(NSData*)data;
+/// 普通字符串转换为十六进制的。
+/// @param string 普通字符串
++ (NSString *)hexStringFromString:(NSString *)string;
+// 十六进制转换为普通字符串的。
++ (NSString *)stringFromHexString:(NSString *)hexString;
 
 /**
  @discussion 解析消费详情数据

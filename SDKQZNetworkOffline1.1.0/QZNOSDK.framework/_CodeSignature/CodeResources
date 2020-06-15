@@ -24,13 +24,17 @@
 		<data>
 		jszeFvyfOCrmoZxzxxTPpPdCcGc=
 		</data>
+		<key>Headers/KRWMSetHeatPumpObject.h</key>
+		<data>
+		fSoGMu5vmpkUuCI3eCc9T9hjqGQ=
+		</data>
 		<key>Headers/KRWMUtils.h</key>
 		<data>
-		+G9qY8md4Fy33dqTNIxdlnwDnz4=
+		WHzK3hJv4cAjG+ClBlWxok1A9a4=
 		</data>
 		<key>Headers/KRWaterMeterKit.h</key>
 		<data>
-		SSCIZzSMEX/99esmLS6S7ilpifs=
+		aS8XNatTKbbb7a3IoGK5VDrcEow=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -94,26 +98,37 @@
 			6xIHRbnnjJ5reqYI/4CNgGOWzd/FtOeag4QMexnQD0c=
 			</data>
 		</dict>
+		<key>Headers/KRWMSetHeatPumpObject.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fSoGMu5vmpkUuCI3eCc9T9hjqGQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			QCepfTST8lCjip22Mt4BvoQe7QvAT5RQeCBa6M9x+Sg=
+			</data>
+		</dict>
 		<key>Headers/KRWMUtils.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+G9qY8md4Fy33dqTNIxdlnwDnz4=
+			WHzK3hJv4cAjG+ClBlWxok1A9a4=
 			</data>
 			<key>hash2</key>
 			<data>
-			EGMK0POEff0/SL8tttIgxMpHXKcRl8UptkMw8ctHeqc=
+			tX4/VCdjMT6wrqxpAe09HLbltCnWJJHdHGG1nSvLYSg=
 			</data>
 		</dict>
 		<key>Headers/KRWaterMeterKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SSCIZzSMEX/99esmLS6S7ilpifs=
+			aS8XNatTKbbb7a3IoGK5VDrcEow=
 			</data>
 			<key>hash2</key>
 			<data>
-			AnxUjK8BbEZBW4kjRt+5NmqeJ9fYpYO1n3OyYopy8BQ=
+			BurdAC1loBPHTCif+zs4sRd4mczbMYCM7+DmNwdTRoE=
 			</data>
 		</dict>
 	</dict>
