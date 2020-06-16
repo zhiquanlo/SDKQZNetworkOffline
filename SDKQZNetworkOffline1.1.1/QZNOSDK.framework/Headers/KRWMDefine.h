@@ -55,6 +55,8 @@ typedef NS_ENUM (NSInteger, KRErrorCode)
     KRErrorCodeEndCodeError = 0x07,
     /*! 来源错误*/
     KRErrorCodeSourceError = 0x08,
+    /*! 密钥错误*/
+    KRErrorCodeKeyError = 0x08,
 };
 
 
@@ -88,8 +90,6 @@ typedef NS_ENUM(NSInteger, KRSyncResponseState) {
     KRSyncResponseStateCheckSumError = 11,
     /*! 同步响应超时*/
     KRSyncResponseStateTimeOut = 12,
-    /*! accountId 账户ID 超出*/
-    RSyncResponseStateAccountIdBeyond = 13,
 };
 
 
@@ -121,8 +121,14 @@ typedef NS_ENUM (NSInteger, KRSyncType)
     KRSyncTypeTransactionRateForDetails = 9,
     /*! 结束交易*/
     KRSyncTypeEndTransactionMacType = 10,
+    /*! 设置密钥*/
+    KRSyncTypeSetKye1_1 = 11,
+    /*! 结束交易*/
+    KRSyncTypeEndWaterTransactionMacType = 12,
+    /*! 交易开始(电控设备)*/
+    KRSyncTypeElectricTransactionRateForDetails = 13,
     /*! 同步结束*/
-    KRSyncTypeEnd = 11,
+    KRSyncTypeEnd = 14,
 };
 
 #endif /* KRWMDefine_h */

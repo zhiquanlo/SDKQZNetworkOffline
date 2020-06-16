@@ -123,7 +123,7 @@
 /**
  设置和读取设备类型
  @param type 00读取 01为写入
- @param MAXType 1 设备主类型(0:水表，1:饮水机，2:洗衣机，3:吹风机，4 充电 器，5空调)
+ @param MAXType 1 设备主类型(0:水表，1:饮水机，2:洗衣机，3:吹风机，4 充电 器)
  @param MINType 设备子类型 (0-9 子类)
  @param dataCallback 响应结果回调
  @param retHandler 同步结果回调
@@ -148,17 +148,24 @@
  @param retHandler 同步结果回调
  */
 - (void)krAssignNumForDevice:(NSNumber*)deviceId productId:(NSNumber*)productId dataCallback:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
-
+/**
+ @discussion 设置密钥1_1协议
+ @param keyData 密钥数据
+ @param dataCallback 响应数据回调
+ @param retHandler 同步结果回调
+ */
+- (void)krV1_1SetKeyData:(NSData*)keyData dataCallback:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
 
 /**
- @discussion 分配费率参数
+ @discussion 分配费率参数(包含V1_1协议)
 
- @param data 费率参数信息 
+ @param data 费率参数信息
+ @param commMode 通信版本
  @see KRRateObject
  @param dataCallback 响应数据回调
  @param retHandler 同步结果回调
  */
-- (void)krAssginRateForDevice:(NSData*)data dataCallback:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
+- (void)krAssginRateForDevice:(NSData*)data commMode:(NSString *)commMode  dataCallback:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
 
 
 /**
@@ -197,7 +204,7 @@
  */
 - (void)krClearConsumptionDetails:(NSData*)data dataCallback:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
 /**
- @discussion 开始交易
+ @discussion 开始交易（包含1.1协议）
  @param data 交易信息
  @see KRTransactionObject
  @param dataCallback 响应数据回调
@@ -205,13 +212,37 @@
  */
 - (void)krTransactionRateForDetails:(NSData*)data dataCallback:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
 
+
 /**
- @discussion 交易结束
- @param MAXType 1 设备主类型(0:水表，1:饮水机，2:洗衣机，3:吹风机，4 充电 器，5空调)
+ @discussion 交易结束(订单模式)
+ @param MAXType 1 设备主类型(0:水表，1:饮水机，2:洗衣机，3:吹风机，4 充电 器)
  @param MINType 设备子类型 (0-9 子类)
  @see KRTransactionObject
  @param dataCallback 响应数据回调
  @param retHandler 同步结果回调
  */
 - (void)krEndTransactionMAXType:(NSNumber *)MAXType MINType:(NSNumber *)MINType dataCallback:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
+
+/**
+ @discussion 交易结束(订单模式V1_1版本)
+ @see KRTransactionObject
+ @param dataCallback 响应数据回调
+ @param retHandler 同步结果回调
+ */
+- (void)krV1_1EndTransactionDataCallback:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
+/**
+ @discussion 交易结束(水控设备V1_1版本)
+ @see KRTransactionObject
+ @param dataCallback 响应数据回调
+ @param retHandler 同步结果回调
+ */
+- (void)krV1_1EndWaterTransactionDataCallback:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
+/**
+ @discussion 交易开始(电控设备)(水控设备V1_1版本)
+ @param data 交易信息
+ @param dataCallback 响应数据回调
+ @param retHandler 同步结果回调
+ */
+- (void)krV1_1ElectricTransactionRateForDetails:(NSData*)data dataCallback:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
+
 @end

@@ -193,7 +193,10 @@
  @property macAddress
  */
 @property (nonatomic,strong)  NSString *macAddress;
-
+/**
+ 数据域
+ */
+@property (nonatomic,strong)NSData *xfData;
 /**
  清除消费账单命令，查询消费账单之后发送清除命令成功后水表进入空闲状态
  
