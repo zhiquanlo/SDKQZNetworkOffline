@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "KRWMObject.h"
-
+#import "KRWMSetHeatPumpObject.h"
 
 
 /**
@@ -69,6 +69,8 @@
  */
 + (KRStateObject*)getStateOfDeviceFromData:(NSData*)data;
 
-
+/// 解析热泵设备信息
+/// @param data 设备数据
++ (KRGetHeatPumpInfo*)getHeatPumpInfoFromData:(NSData*)data;
 @end
 

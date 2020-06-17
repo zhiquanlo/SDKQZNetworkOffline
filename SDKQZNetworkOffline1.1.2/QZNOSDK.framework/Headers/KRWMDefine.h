@@ -56,7 +56,7 @@ typedef NS_ENUM (NSInteger, KRErrorCode)
     /*! 来源错误*/
     KRErrorCodeSourceError = 0x08,
     /*! 密钥错误*/
-    KRErrorCodeKeyError = 0x08,
+    KRErrorCodeKeyError = 0x09,
 };
 
 
@@ -127,8 +127,18 @@ typedef NS_ENUM (NSInteger, KRSyncType)
     KRSyncTypeEndWaterTransactionMacType = 12,
     /*! 交易开始(电控设备)*/
     KRSyncTypeElectricTransactionRateForDetails = 13,
+    /*! 清除热泵水电表参数设置(A0)*/
+    KRSyncTypeClearHeatPumpWaterElectricity = 14,
+    /*! 更新MQTT连接(A1)*/
+    KRSyncTypeUpDataMQTT = 15,
+    /*! 设置水表地址 (A2)*/
+    KRSyncTypeSetWaterMeter = 16,
+    /*! 设置电表地址 (A3)*/
+    KRSyncTypeSetElectricMeter = 17,
+    /*! 设置电表地址 (A4)*/
+    KRSyncTypeGetHeatPumpInfo = 18,
     /*! 同步结束*/
-    KRSyncTypeEnd = 14,
+    KRSyncTypeEnd = 19,
 };
 
 #endif /* KRWMDefine_h */

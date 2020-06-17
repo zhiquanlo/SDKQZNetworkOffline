@@ -18,11 +18,11 @@
 		</data>
 		<key>Headers/KRWMCore.h</key>
 		<data>
-		M8AdGIiQ6kN/FKwOL497nIJSgJQ=
+		B7RXgyJ6PgSSL18S7Trq9hSafhk=
 		</data>
 		<key>Headers/KRWMDefine.h</key>
 		<data>
-		3zWBT6O7QVoXS9OfjZ0AW9EEZjA=
+		/XjHbj1GDJsCanAxkGb7Ier6va0=
 		</data>
 		<key>Headers/KRWMObject.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/KRWMUtils.h</key>
 		<data>
-		WHzK3hJv4cAjG+ClBlWxok1A9a4=
+		4+HSDW3cPMJnriZP7cFQqVUjky0=
 		</data>
 		<key>Headers/KRWaterMeterKit.h</key>
 		<data>
@@ -73,22 +73,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			M8AdGIiQ6kN/FKwOL497nIJSgJQ=
+			B7RXgyJ6PgSSL18S7Trq9hSafhk=
 			</data>
 			<key>hash2</key>
 			<data>
-			FvACpXfUbOrLvyvLINJRh9LbTMa9XzapU2X2d22cYkc=
+			cnJECxE6qV4aKyzJMVcSH8pcs2wb06/SLwK4bWqEAjU=
 			</data>
 		</dict>
 		<key>Headers/KRWMDefine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3zWBT6O7QVoXS9OfjZ0AW9EEZjA=
+			/XjHbj1GDJsCanAxkGb7Ier6va0=
 			</data>
 			<key>hash2</key>
 			<data>
-			NuNKTbSZ5DfXBMvPcKRQex76rqt+3uqCB8vkNXDn0C8=
+			MOk3Qaz1W3RCP1n+5LIdW9GHFIk0BsnnPtCCLGHGh2A=
 			</data>
 		</dict>
 		<key>Headers/KRWMObject.h</key>
@@ -117,11 +117,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WHzK3hJv4cAjG+ClBlWxok1A9a4=
+			4+HSDW3cPMJnriZP7cFQqVUjky0=
 			</data>
 			<key>hash2</key>
 			<data>
-			tX4/VCdjMT6wrqxpAe09HLbltCnWJJHdHGG1nSvLYSg=
+			tCbe+NvgUNkpw8P/2Btvp1YJg4rbFSAguiH5gzRyrJ8=
 			</data>
 		</dict>
 		<key>Headers/KRWaterMeterKit.h</key>

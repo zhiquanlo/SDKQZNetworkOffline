@@ -244,5 +244,44 @@
  @param retHandler 同步结果回调
  */
 - (void)krV1_1ElectricTransactionRateForDetails:(NSData*)data dataCallback:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
+/**
+ @discussion 清除热泵水电表参数设置(A0)
+ @param projectId 项目id
+ @param dataCallback 响应数据回调
+ @param retHandler 同步结果回调
+ */
+- (void)krClearHeatPumpWaterElectricityProjectId:(NSNumber *)projectId dataCallback:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
 
+/**
+ @discussion 热泵更新MQTT连接(A1)
+
+ @param data 更新数据
+ @param dataCallback 响应数据回调
+ @param retHandler 同步结果回调
+ */
+- (void)krUpDataMQTTDetails:(NSData*)data dataCallback:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
+
+/**
+ @discussion 热泵设置水表地址 (A2)
+
+ @param data 设置数据
+ @param dataCallback 响应数据回调
+ @param retHandler 同步结果回调
+ */
+- (void)krSetWaterMeterDetails:(NSData*)data dataCallback:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
+/**
+ @discussion 热泵设置电表地址 (A3)
+
+ @param data 设置数据
+ @param dataCallback 响应数据回调
+ @param retHandler 同步结果回调
+ */
+- (void)krSetElectricMeterDetails:(NSData*)data dataCallback:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
+/**
+ @discussion 热泵查询设备信息 (A4)
+ @param projectId 项目id
+ @param dataCallback 响应数据回调
+ @param retHandler 同步结果回调
+ */
+- (void)krGetHeatPumpInfoProjectId:(NSNumber *)projectId dataCallback:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
 @end
