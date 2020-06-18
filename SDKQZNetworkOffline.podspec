@@ -2,10 +2,10 @@
 
 Pod::Spec.new do |s|
   s.name         = "SDKQZNetworkOffline"
-  s.version      = "1.1.2"
+  s.version      = "1.1.3"
   s.summary      = "趣智校园蓝牙交互SDK网络版"
   s.description  = <<-DESC
-			趣智校园蓝牙交互SDK网络版1.1.2版本,增加了热泵设置，MAC地址处理
+			趣智校园蓝牙交互SDK网络版1.1.3版本,增加了热泵设置，MAC地址处理 模拟器真机整合
                    DESC
 
   s.homepage     = "https://github.com/zhiquanlo/SDKQZNetworkOffline.git"
@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
 	'OTHER_LDFLAGS' => '-ObjC'
  }
   s.requires_arc = false
-  s.vendored_frameworks = 'SDKQZNetworkOffline1.1.2/*.framework'
+  s.vendored_frameworks = 'SDKQZNetworkOffline1.1.3/*.framework'
 end
