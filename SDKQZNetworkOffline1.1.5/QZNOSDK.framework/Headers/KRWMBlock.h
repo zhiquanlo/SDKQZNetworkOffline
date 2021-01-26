@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 #import "KRWMObject.h"
-
+#import "KRWMDefine.h"
 
 #ifndef KRWMBlock_h
 #define KRWMBlock_h

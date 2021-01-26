@@ -59,33 +59,41 @@
 @interface KRGetHeatPumpInfo : NSObject
 
 /// 12位MAC地址 MAC:0015830149A2
-@property (nonatomic,strong) NSString *macAddress;
+@property (nonatomic,copy,readonly) NSString *macAddress;
 /// 项目编号
-@property (nonatomic,strong) NSNumber *projectId;
+@property (nonatomic,copy,readonly) NSNumber *projectId;
 
 /// 软件版本号
-@property (nonatomic,strong)NSString *VerSoft;
+@property (nonatomic,copy,readonly) NSString *verSoft;
 /// 水表地址
-@property (nonatomic,strong) NSString *waterDevaddr;
+@property (nonatomic,copy,readonly) NSString *waterDevaddr;
 /// 电表地址
-@property (nonatomic,strong) NSString *electricDevaddr;
+@property (nonatomic,copy,readonly) NSString *electricDevaddr;
 /// 主题只改后缀
-@property (nonatomic,strong) NSNumber *topic_n;
+@property (nonatomic,copy,readonly) NSNumber *topic_n;
 /// SIM卡号
-@property (nonatomic,strong) NSString *CCID;
+@property (nonatomic,copy,readonly) NSString *CCID;
 /// MqttAddr长度
-@property (nonatomic,strong) NSNumber *AddrLen;
+@property (nonatomic,copy,readonly) NSNumber *addrLen;
 /// MqttAddr地址
-@property (nonatomic,strong) NSString *MqttAddr;
+@property (nonatomic,copy,readonly) NSString *mqttAddr;
 /// 端口号
-@property (nonatomic,strong) NSNumber *portNum;
+@property (nonatomic,copy,readonly) NSNumber *portNum;
 /// 水表波特率设置
-@property (nonatomic,strong) NSNumber *WaterBaud;
+@property (nonatomic,copy,readonly) NSNumber *waterBaud;
 /// 电表波特率设置
-@property (nonatomic,strong) NSNumber *ElectricBaud;
+@property (nonatomic,copy,readonly) NSNumber *electricBaud;
 /// 水表协议版本
-@property (nonatomic,strong) NSNumber *WaterVersion;
+@property (nonatomic,copy,readonly) NSNumber *waterVersion;
 /// 电表协议版本
-@property (nonatomic,strong) NSNumber *ElectricVersion;
+@property (nonatomic,copy,readonly) NSNumber *electricVersion;
+
+
+/**
+ @discussion 解析热泵设备信息
+ @param data 设备数据
+ @return <code>KRGetHeatPumpInfo</code>对象，如果data为<i>nil</i>,返回空
+ */
++ (instancetype)heatPumpInfoDetailsObjectWithDetailsFromData:(NSData *)data;
 @end
 

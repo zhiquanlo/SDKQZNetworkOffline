@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "KRWMObject.h"
 #import "KRWMSetHeatPumpObject.h"
-
+#import "KRWMDefine.h"
 
 /**
  @class KRWMUtils
@@ -52,25 +52,5 @@
 // 十六进制转换为普通字符串的。
 + (NSString *)stringFromHexString:(NSString *)hexString;
 
-/**
- @discussion 解析消费详情数据
- 
- @param data 消费详情
- @return <code>KRConsumptionDetailsObject</code>对象，如果data为<i>nil</i>,返回空
- */
-+ (KRConsumptionDetailsObject*)getConsumptionDetailsFromData:(NSData*)data;
-
-
-/**
- @discussion 解析设备状态数据
- 
- @param data 设备状态数据
- @return <code>KRStateObject</code>对象，如果data为<i>nil</i>,返回空
- */
-+ (KRStateObject*)getStateOfDeviceFromData:(NSData*)data;
-
-/// 解析热泵设备信息
-/// @param data 设备数据
-+ (KRGetHeatPumpInfo*)getHeatPumpInfoFromData:(NSData*)data;
 @end
 
