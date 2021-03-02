@@ -137,8 +137,10 @@ typedef NS_ENUM (NSInteger, KRSyncType)
     KRSyncTypeSetElectricMeter = 17,
     /*! 设置电表地址 (A4)*/
     KRSyncTypeGetHeatPumpInfo = 18,
+    /*! 禁用密钥*/
+    KRSyncTypeDisableKeyNo = 19,
     /*! 同步结束*/
-    KRSyncTypeEnd = 19,
+    KRSyncTypeEnd = 20,
 };
 
 #endif /* KRWMDefine_h */

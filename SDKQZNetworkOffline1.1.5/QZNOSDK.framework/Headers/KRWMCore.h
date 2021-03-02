@@ -245,6 +245,14 @@
  */
 - (void)krV1_1ElectricTransactionRateForDetails:(NSData*)data dataCallback:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
 /**
+ @discussion 禁用密钥
+ @param keyNo 密钥编码
+ @param type    00启用01为禁用
+ @param dataCallback 响应数据回调
+ @param retHandler 同步结果回调
+ */
+- (void)krDisableKeyNo:(NSNumber*)keyNo type:(NSNumber *)type dataCallback:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
+/**
  @discussion 清除热泵水电表参数设置(A0)
  @param projectId 项目id
  @param dataCallback 响应数据回调
