@@ -292,4 +292,11 @@
  @param retHandler 同步结果回调
  */
 - (void)krGetHeatPumpInfoProjectId:(NSNumber *)projectId dataCallback:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
+/**
+ @discussion 冷水表同步数据
+ @see KRConsumptionDetailsObject
+ @param dataCallback 响应数据回调
+ @param retHandler 同步结果回调
+ */
+- (void)krColdWaterMeterGetStateOfDevice:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
 @end

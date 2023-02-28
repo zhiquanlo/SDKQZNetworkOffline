@@ -139,8 +139,10 @@ typedef NS_ENUM (NSInteger, KRSyncType)
     KRSyncTypeGetHeatPumpInfo = 18,
     /*! 禁用密钥*/
     KRSyncTypeDisableKeyNo = 19,
+    /*! 冷水表获取设备信息*/
+    KRSyncTypeColdWaterMeterGetStateOfDevice = 20,
     /*! 同步结束*/
-    KRSyncTypeEnd = 20,
+    KRSyncTypeEnd = 21,
 };
 
 #endif /* KRWMDefine_h */
