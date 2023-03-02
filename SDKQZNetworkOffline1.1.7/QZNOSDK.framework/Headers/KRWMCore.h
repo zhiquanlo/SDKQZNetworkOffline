@@ -293,10 +293,17 @@
  */
 - (void)krGetHeatPumpInfoProjectId:(NSNumber *)projectId dataCallback:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
 /**
- @discussion 冷水表同步数据
- @see KRConsumptionDetailsObject
+ @discussion 获取冷水表设备信息
  @param dataCallback 响应数据回调
  @param retHandler 同步结果回调
  */
 - (void)krColdWaterMeterGetStateOfDevice:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
+/**
+ @discussion 公用设备发送数据
+ @param data 数据
+ @param funCode 功能码
+ @param dataCallback 响应数据回调
+ @param retHandler 同步结果回调
+ */
+- (void)krPublicSendData:(NSData *)data funCode:(unsigned int)funCode dataCallback:(KRWMDataHandler)dataCallback result:(KRWMResultHandler)retHandler;
 @end
