@@ -2,10 +2,10 @@
 
 Pod::Spec.new do |s|
   s.name         = "SDKQZNetworkOffline"
-  s.version      = "1.1.9"
+  s.version      = "1.2.0"
   s.summary      = "趣智校园蓝牙交互SDK网络版"
   s.description  = <<-DESC
-			增加了冷水表搜索
+			优化了SDK
                    DESC
 
   s.homepage     = "https://github.com/zhiquanlo/SDKQZNetworkOffline.git"
@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
  }
   s.requires_arc = false
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
-  s.vendored_frameworks = 'SDKQZNetworkOffline1.1.9/*.framework'
+  s.vendored_frameworks = 'SDKQZNetworkOffline1.2.0/*.framework'
 end

@@ -29,7 +29,7 @@ typedef void (^KRWMPeriphralsHandler)(NSArray<CBPeripheral*> *retArray, CBPeriph
  @param syncType 当前同步类型
  @param data 同步的数据
  */
-typedef void (^KRWMDataHandler)(KRSyncType syncType, NSData *data);
+typedef void (^KRWMDataHandler)(KRSyncType syncType, NSData *data , NSString *originalData);
 
 
 /**
@@ -39,5 +39,27 @@ typedef void (^KRWMDataHandler)(KRSyncType syncType, NSData *data);
  @param state 同步结果响应状态
  */
 typedef void (^KRWMResultHandler)(KRSyncType syncType, KRSyncResponseState state);
+
+/**
+ @discussion 连接成功
+
+ @param peripheral 连接外设
+ */
+typedef void (^KRWMConnectionSuccessfulHandler)(CBPeripheral *peripheral);
+
+/**
+ @discussion 连接失败
+
+ @param peripheral 连接外设
+ */
+typedef void (^KRWMConnectionFailHandler)(CBPeripheral *peripheral);
+
+/**
+ @discussion 断开连接
+
+ @param peripheral 连接外设
+ */
+typedef void (^KRWMDisconnectHandler)(CBPeripheral *peripheral);
+
 
 #endif /* KRWMBlock_h */

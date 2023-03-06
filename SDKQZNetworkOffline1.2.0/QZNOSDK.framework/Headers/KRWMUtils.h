@@ -52,5 +52,7 @@
 // 十六进制转换为普通字符串的。
 + (NSString *)stringFromHexString:(NSString *)hexString;
 
+/// 获取SDK版本号
++ (NSString *)getVersionString;
 @end
 

@@ -49,27 +49,36 @@
  */
 @property (nonatomic, assign) NSTimeInterval timeOutInterval;
 
-// 日志显示
-@property (nonatomic, assign) BOOL logStringChanged;
+/**
+ 操作日志显示
+ */
 @property (nonatomic, strong) NSMutableString *AllLogString;
-
-
+/**
+ 开启日志
+ 默认为NO
+ 生产环境设置为NO 关闭日志打印
+ */
+@property (nonatomic, assign) BOOL startLog;
+/**连接成功**/
+@property (nonatomic, copy) KRWMConnectionSuccessfulHandler connectionSuccessfulHandler;
+/**连接失败**/
+@property (nonatomic, copy) KRWMConnectionFailHandler connectionFailHandler;
+/**断开连接**/
+@property (nonatomic, copy) KRWMDisconnectHandler disconnectHandler;
 
 + (instancetype)sharedCore;
 
 
 /**
- 扫描蓝牙外设，如果uuidString存在则返回指定uuidString的外设，不存在则扫描所有符合条件的外设
+ 扫描蓝牙外设，如果uuidString存在则返回指定uuidString的外设，否则扫描指定mac地址的外设并连接 retHandler不会回调
 
  @param uuidString 蓝牙uuid字符串
  @param handler 扫描结果回调block
  */
 - (void)scanForPeripherals:(NSString *)uuidString retHandler:(KRWMPeriphralsHandler)handler;
 
-
 /**
- 扫描蓝牙外设，如果macAddress不存在则扫描所有外设，否则扫描指定mac地址的外设
-
+ 扫描蓝牙外设，如果macAddress不存在则扫描所有外设，否则扫描指定mac地址的外设并连接 retHandler不会回调
  @param macAddress 蓝牙mac地址
  @param handler 扫描结果回调
  */
