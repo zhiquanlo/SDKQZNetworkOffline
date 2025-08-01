@@ -111,17 +111,23 @@
  */
 @property (nonatomic,copy,readonly) NSNumber *cardmoney;
 /**
- @discussion 设备类型(1密码水表)
+ @discussion 密钥编号 从00开始一共50组
  @property deviceType
  */
-@property (nonatomic,copy,readonly) NSNumber *deviceType;
+@property (nonatomic,copy,readonly) NSNumber *KEYNO;
+/**
+ @discussion 功能版本特定值，区分功能 特定值6A用于区分
+ @property deviceType
+ */
+@property (nonatomic,copy,readonly) NSNumber *functionType;
 /**
  @discussion 预留字段
- @property reserved 8个字节
+ @property reserved 7个字节
  */
-@property (nonatomic,copy,readonly) NSNumber *reserved;
+@property (nonatomic, strong, readonly) NSData *reserved;
 
-/**
+
+/**x
  @discussion 解析设备状态数据
  
  @param data 设备状态数据

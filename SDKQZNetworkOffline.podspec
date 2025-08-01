@@ -2,10 +2,10 @@
 
 Pod::Spec.new do |s|
   s.name         = "SDKQZNetworkOffline"
-  s.version      = "1.2.0"
+  s.version      = "1.2.1"
   s.summary      = "趣智校园蓝牙交互SDK网络版"
   s.description  = <<-DESC
-			优化了SDK
+			功能版本特定值，区分功能 特定值6A用于区分
                    DESC
 
   s.homepage     = "https://github.com/zhiquanlo/SDKQZNetworkOffline.git"
