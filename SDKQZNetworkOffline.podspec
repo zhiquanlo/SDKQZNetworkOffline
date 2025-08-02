@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
  }
   s.requires_arc = false
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
-  s.vendored_frameworks = 'SDKQZNetworkOffline1.2.0/*.framework'
+  s.vendored_frameworks = 'SDKQZNetworkOffline1.2.1/*.framework'
 end
